@@ -27,7 +27,7 @@
         default_layer {
             display-name = "MAIN";
             bindings = <
-&none  &kp Q  &kp W  &kp E       &mt LCTRL R    &mt LALT T   &mt RIGHT_ALT Y  &mt RCTRL U    &kp I              &kp O    &kp P             &none
+&none  &kp Q  &kp W  &mt LGUI E  &mt LCTRL R    &mt LALT T   &mt RIGHT_ALT Y  &mt RCTRL U    &mt RGUI I         &kp O    &kp P             &none
 &none  &kp A  &kp S  &kp D       &kp F          &kp G        &kp H            &kp J          &kp K              &kp L    &kp SINGLE_QUOTE  &none
 &none  &kp Z  &kp X  &kp C       &kp V          &kp B        &kp N            &kp M          &kp COMMA          &kp DOT  &kp FSLH          &none
                      &lt 2 EXCL  &mt LSHFT TAB  &lt 1 SPACE  &lt 1 ENTER      &mt RSHFT DEL  &lt RSE BACKSPACE
@@ -47,10 +47,10 @@
         raise_layer {
             display-name = "NUM";
             bindings = <
-&none  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5   &kp F6   &kp F7  &kp F8  &kp F9  &kp F10  &none
-&none  &none   &none   &none   &none   &kp F11  &kp F12  &none   &none   &none   &none    &none
-&none  &none   &none   &none   &none   &none    &none    &none   &none   &none   &none    &none
-                       &trans  &trans  &trans   &trans   &trans  &trans
+&none  &kp F1  &kp F2      &kp F3             &kp F4            &kp F5   &kp F6   &kp F7  &kp F8  &kp F9  &kp F10  &none
+&none  &none   &kp C_PREV  &kp C_VOLUME_UP    &kp C_NEXT        &kp F11  &kp F12  &none   &none   &none   &none    &none
+&none  &none   &kp C_MUTE  &kp C_VOLUME_DOWN  &kp C_PLAY_PAUSE  &none    &none    &none   &none   &none   &none    &none
+                           &trans             &trans            &trans   &trans   &trans  &trans
             >;
         };
 
